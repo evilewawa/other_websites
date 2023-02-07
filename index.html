@@ -6,7 +6,7 @@
         <link rel = "stylesheet" href = "index.css">
     </head>
     
-    <body>
+    <body id = "body" onload = "createAnimations()">
         <header >
             <div class = "header_container">
             
@@ -64,18 +64,25 @@
                         
                  </section>
                  <br/>
-                 <section class = "project_container backwhite" style = "flex-direction: row; " >
+                 <section class = "project_container backwhite" style = "flex-direction: column; " >
                     <div class = "project">
-                        <h1 class = "project_title" >Visualizer Websites<a  href = 'https://github.com/evilewawa/workoutApp' target = "_blank" ><img class = 'project_icon' src = "github icon.svg" /></a></h1>
+                        <h1 class = "project_title" >Visualizer Websites<!--<a  href = 'https://github.com/evilewawa/workoutApp' target = "_blank" ><img class = 'project_icon' src = "github icon.svg" /></a>--></h1>
                         <ul class = "project_description_list">
                             <li>HTML/CSS, Javascript</li>
                             <li>These projects were a collection of visualizers that I used for demonstrating my understanding of basic computer science concepts</li>
                             <li>I chose to create them specifically from scratch in order to gain a deeper understanding for the underlying algorithms</li>
                             <li>These algorithms were useful in later projects such as my hexagon tessalation</li>
+                            <li>Feel free to click on the animations below to explore the websites more!</li>
                         </ul>
                        <!-- Add animations of sorting algorithm, pathfinding algorithm and  hexagon tessalation pulse    <- can be done pure js w a setInterval or anime js                     -->
                     </div>
-                    <div class = "project_images"></div>
+                    <div class = "website_demo_animations" >
+                        <div class = "website_anime sort_anime" id = "sorting_animation_div">
+                            
+                        </div>
+                        <div class = "website_anime path_anime" ><div id = "path_animation_div" class = "path_anime_div"></div></div>
+                        <div class = "website_anime hex_anime" id = "hex_animation_div"></div>
+                    </div>
                  
                   
              </section>
@@ -83,7 +90,7 @@
                <h1 style = "font-size: 50px; margin-bottom:10px;padding-left:8vw; text-decoration: underline;">Experience</h1>
                 <section class = "project_container backwhite" style = "flex-direction: row;" >
                         <div class = "project">
-                            <h1 class = "project_title" >My Code Club<a  href = 'https://github.com/evilewawa/workoutApp' target = "_blank" ><img class = 'project_icon' src = "github icon.svg" /></a></h1>
+                            <h1 class = "project_title" >My Code Club<!--<a  href = 'https://github.com/evilewawa/workoutApp' target = "_blank" ><img class = 'project_icon' src = "github icon.svg" /></a>--></h1>
                             <ul class = "project_description_list">
                                 <li>Instructor of Python and Scratch</li>
                                 <li>I taught a class of students fundamentals of programming, creating a cirriculum and virtual classroom</li>
@@ -99,9 +106,7 @@
                     <p>A library of all my current and past projects, ordered in the order most recently </p>
                     <div class = "general_block">
                         <h1 class = "project_title">walid</h1>
-
                         <p class = "project_content ">walid</p>
-
                     </div>
                 </section>
                 <section class = "backwhite">
